@@ -16,16 +16,13 @@
 			homepage: '/菜单/1项目介绍.md',
 			repo: 'docsifyjs/docsify',
 			auto2top: true,
-			loadNavbar: true,
 			coverpage: true,
 			coverpage: '封面.md',
 			loadSidebar: true,
 			search: 'auto', // 默认值
 			search : [
 			  '/',            // => /README.md
-			  '/guide',       // => /guide.md
-			  '/get-started', // => /get-started.md
-			  '/zh-cn/',      // => /zh-cn/README.md
+			  '/_sidebar',       // => /_sidebar.md
 			],
 
 			// 完整配置参数
@@ -53,22 +50,7 @@
 			}
 		}
 	</script>
-	<script src="/lib/docsify.js" data-load-sidebar="_sidebar.md"></script>
 	<script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
-	<script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
-	<link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
-	<script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
-	<script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
-	<script>
-		const gitalk = new Gitalk({
-			clientID: 'Github Application Client ID',
-			clientSecret: 'Github Application Client Secret',
-			repo: 'Github repo',
-			owner: 'Github repo owner',
-			admin: ['Github repo collaborators, only these guys can initialize github issues'],
-			// facebook-like distraction free mode
-			distractionFreeMode: false
-		})
-	</script>
+	
 </body>
 </html>
